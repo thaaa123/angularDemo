@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import Hero from '../hero'
+import { HEROES } from '../mock-heroes'
 
 @Component({
   selector: 'app-heroes',
@@ -6,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./heroes.component.less']
 })
 export class HeroesComponent implements OnInit {
+
+  heroes = HEROES
 
   constructor() { }
 
